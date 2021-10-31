@@ -1,4 +1,5 @@
 <?php
+//開啟session
 session_start();
 $_SESSION = array();
 session_destroy();

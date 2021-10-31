@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新增資料</title>
+</head>
+
+<body>
+    <div><a href="index.php">返回</a></div>
+    <h1>新增款項</h1>
+    <form action="action_addData.php" method="post" name="formAdd" enctype="multipart/form-data">
+        <tr>
+            <th>姓名</th><br>
+            <td><input type="text" name="name" size="25" value=""></td>
+        </tr>
+        <br>
+        <tr>
+            <th>身份證</th><br>
+            <td><input type="text" name="identity" size="25" value=""></td>
+        </tr>
+        <br>
+        <tr>
+            <th>款項類型</th><br>
+            <td>
+                <select name="category">
+                    <option value="">請選擇款項</option>
+                    <option value="annual_fee">年費</option>
+                    <option value="donation">捐款</option>
+                    <option value="admission_fee">入會費</option>
+                    <select>
+                </td>
+        </tr>
+        <br>
+        <tr>
+            <th>金額</th><br>
+            <td><input type="text" name="amount" size="25" value=""></td>
+        </tr>
+        <br>
+        <tr>
+            <th>收款日期</th><br>
+            <td><input type="text" name="date" size="25" value=""></td>
+        </tr>
+        <br>
+        <br>
+        <tr>
+        <input type="hidden" name="action" value="add">
+        <td><input type="submit" name="button" value="新增資料">
+        <input type="reset" name="button2" value="重新填寫"></td>
+        </tr>
+
+    </form>
+
+</body>
+
+</html>
